@@ -49,8 +49,29 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.size();
     }
 
+    /**
+     * this adds a city object to the list *for the first phase it will be empty
+     *
+     * @param city
+     */
     public void addCity(City city){
+        cities.add(city);
+    }
 
+    /**
+     *
+     * @param city
+     *  this is the city that we are testing to see if it is in the list
+     * @return
+     *  returns true if the city is in the list and false if it is not
+     */
+    public boolean hasCity(City city){
+        for(int i = 0; i < cities.size();i++){
+            if(cities.get(i).equals(city)){
+                return true;
+            }
+        }
+        return false;
     }
 
 }
