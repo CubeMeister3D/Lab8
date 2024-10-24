@@ -44,7 +44,14 @@ public class CustomList extends ArrayAdapter<City> {
         return view;
 
     }
-
+    /**
+     *
+     * @return cityCount
+     *  returns the number of cities that are in the list.
+     */
+    public int cityCount(){
+       return cities.size();
+    }
     public int getCount(){
         return cities.size();
     }
@@ -91,4 +98,5 @@ public class CustomList extends ArrayAdapter<City> {
         }
         cities.remove(i);
     }
+
 }
