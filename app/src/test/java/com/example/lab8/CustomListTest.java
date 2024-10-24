@@ -75,7 +75,7 @@ public class CustomListTest {
         //test to see if the original city is counted
         assertEquals(1,list.cityCount());
         //test to see if we add a city that it is counted
-        list.add(new City("Charlottetown", "Prince Edward Island"));
+        list.addCity(new City("Charlottetown", "Prince Edward Island"));
         assertEquals(2,list.cityCount());
         //test to see if deleting a city get counted properly
     }
